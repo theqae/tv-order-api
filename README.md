@@ -19,7 +19,7 @@ Thank you for the opportunity to participate in this challenge :D
 ## Built using:
 
 ![Cypress Badge](https://img.shields.io/badge/cypress-%2369D3A7?logo=cypress&logoColor=%2369D3A7&labelColor=white&color=blue)
-![Typsescript Badge](https://img.shields.io/badge/typsescript-%233178C6?logo=typescript&labelColor=white)
+![Javascript Badge](https://img.shields.io/badge/javascript-%20%23000000?logo=javascript&logoColor=%20%23000000&labelColor=white&color=blue)
 
 <div align="right"
 
@@ -43,14 +43,22 @@ https://docs.cypress.io/guides/getting-started/installing-cypress#System-require
 1. Clone the repo using:
 
         git clone https://github.com/theqae/tv-order-api.git
-2. Run via User Interface / Run via Command Line:
+2. Run via User Interface:
     
-        npx cypress open / npx cypress run
-    *If running via UI, go to step 3*
-3. UI Only: `Select E2E Testing`
-4. UI Only: `Choose a Browser`
-5. UI Only: `Select Start E2E Testing via...`
-6. UI Only: Select the spec (test) you'd like to run
+        npx cypress open
+    *If running via UI, go to step 4*
+3. Run via Command Line: 
+
+        npx cypress run
+        OR
+        npx cypress run --spec "cypress/e2e/product-api/deleteProduct.cy.js"
+4. UI Only: `Select E2E Testing`
+5. UI Only: `Choose a Browser`
+6. UI Only: `Select Start E2E Testing via...`
+7. UI Only: Select the spec (test) you'd like to run
+
+ / npx cypress run
+npx cypress run --spec "cypress/e2e/api-tests.cy.js"
 
 <div align="right"
 
