@@ -57,9 +57,6 @@ https://docs.cypress.io/guides/getting-started/installing-cypress#System-require
 6. UI Only: `Select Start E2E Testing via...`
 7. UI Only: Select the spec (test) you'd like to run
 
- / npx cypress run
-npx cypress run --spec "cypress/e2e/api-tests.cy.js"
-
 <div align="right"
 
 [Back to Top](#price-checker)
