@@ -8,6 +8,8 @@ QA Candidate Challenge
 
 This project is an automated test suite which can be used to test the TeamViewer order API. This test suite includes test cases surrounding GET, POST, PUT, and DELETE against the /product endpoint of the Order API.
 
+Thank you for the opportunity to participate in this challenge :D 
+
 <div align="right"
 
 [Back to Top](#price-checker)
