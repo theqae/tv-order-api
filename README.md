@@ -42,7 +42,7 @@ https://docs.cypress.io/guides/getting-started/installing-cypress#System-require
 
 1. Clone the repo using:
 
-        https://github.com/theqae/tv-order-api.git
+        git clone https://github.com/theqae/tv-order-api.git
 2. Run via User Interface / Run via Command Line:
     
         npx cypress open / npx cypress run
