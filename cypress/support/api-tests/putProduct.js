@@ -1,5 +1,5 @@
-export class putProduct {
-    static verifyPutProduct() { 
+class PutProduct {
+     verifyPutProduct() { 
         cy.request({
             method: 'PUT',
             url: '/product/1', // Assuming there is at least 1 product
@@ -24,7 +24,7 @@ export class putProduct {
         })  
     }
 
-    static verifyMissingId() {
+     verifyMissingId() {
         cy.request({
             method: 'PUT',
             url: '/product',
@@ -41,7 +41,7 @@ export class putProduct {
             expect(response.status).to.eq(400) // Checking for the expected 400 response code
         })  
     }
-    static verifyInvalidName() {
+     verifyInvalidName() {
         cy.request({
             method: 'PUT',
             url: '/product/v1',
@@ -59,7 +59,7 @@ export class putProduct {
         })  
     }
 
-    static verifyInvalidDesc() {
+     verifyInvalidDesc() {
         cy.request({
             method: 'PUT',
             url: '/product/v1',
@@ -77,7 +77,7 @@ export class putProduct {
         })  
     }    
 
-    static verifyInvalidPrice() {
+     verifyInvalidPrice() {
         cy.request({
             method: 'PUT',
             url: '/product',
@@ -94,6 +94,6 @@ export class putProduct {
             expect(response.status).to.eq(400) // Checking for the expected 400 response code
         })  
     }
-
-
 }
+
+module.exports = new PutProduct();

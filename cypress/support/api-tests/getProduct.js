@@ -1,5 +1,5 @@
-export class getProduct {
-   static verifyGetProduct() { // Must be declared a static method to be called in e2e file
+class GetProduct {
+    verifyGetProduct() { // Must be declared a  method to be called in e2e file
         // Request
         cy.request("GET", "/product").then((response) => {
         
@@ -31,3 +31,5 @@ export class getProduct {
         })
     }
 }
+
+module.exports = new GetProduct();

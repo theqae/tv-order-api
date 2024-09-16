@@ -1,5 +1,5 @@
-export class deleteProduct {
-    static verifyDeleteProduct() { 
+class DeleteProduct {
+    verifyDeleteProduct() { 
          // Using GET to retrieve an existing id
          cy.request("GET", "/product").then((response) => { // Assuming there is at least 1 product
             expect(response.status).to.eq(200) // Checking for the expected 200 response code
@@ -19,10 +19,12 @@ export class deleteProduct {
         })
     }
 
-    static verifyNonExistentProduct() {
+    verifyNonExistentProduct() {
         cy.request("DELETE", "/product/9999").then((response) => { // Assuming there is not product id 9999
             expect(response.status).to.eq(404) // Checking for the expected 200 response code
             expect(response.body).to.have.property('message', 'Visitor not found')
         })
     }
 } 
+
+module.exports = new DeleteProduct();
