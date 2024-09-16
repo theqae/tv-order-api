@@ -1,5 +1,5 @@
-export class postProduct {
-    static verifyPostProduct() { 
+class PostProduct {
+     verifyPostProduct() { 
         cy.request({
             method: 'POST',
             url: '/product',
@@ -23,7 +23,7 @@ export class postProduct {
         })  
     }
 
-    static verifyRequiredProperties() { 
+     verifyRequiredProperties() { 
         cy.request({
             method: 'POST',
             url: '/product',
@@ -42,7 +42,7 @@ export class postProduct {
         })  
     }
 
-    static verifyMissingName() { 
+     verifyMissingName() { 
         cy.request({
             method: 'POST',
             url: '/product',
@@ -59,7 +59,7 @@ export class postProduct {
         })  
     }
 
-    static verifyMissingPrice() { 
+     verifyMissingPrice() { 
         cy.request({
             method: 'POST',
             url: '/product',
@@ -75,7 +75,7 @@ export class postProduct {
         })  
     }
 
-    static verifyInvalidName() { 
+     verifyInvalidName() { 
         cy.request({
             method: 'POST',
             url: '/product',
@@ -91,7 +91,7 @@ export class postProduct {
         })  
     }
 
-    static verifyInvalidPrice() { 
+     verifyInvalidPrice() { 
         cy.request({
             method: 'POST',
             url: '/product',
@@ -107,3 +107,5 @@ export class postProduct {
         })  
     }
 }
+
+module.exports = new PostProduct();
